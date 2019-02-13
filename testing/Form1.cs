@@ -17,19 +17,43 @@ namespace testing
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Hello World");
         }
 
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void bntPrevClick(object sender, EventArgs e)
+        {
+            if (tabControl1.SelectedIndex > 0)
+                tabControl1.SelectedIndex--;
+        }
+
+        private void btnNextClick(object sender, EventArgs e)
+        {
+            if (tabControl1.SelectedIndex < tabControl1.TabPages.Count)
+                tabControl1.SelectedIndex++;
+        }
+
+        private void num1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
+            float n1 = float.Parse(num1.Text);
+            float n2 = float.Parse(num2.Text);
+            float r = n1 + n2;
+            lblResult.Text = r.ToString();
         }
     }
 }
