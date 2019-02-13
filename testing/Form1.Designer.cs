@@ -32,21 +32,23 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Methods = new System.Windows.Forms.TabPage();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.num2 = new System.Windows.Forms.TextBox();
+            this.num1 = new System.Windows.Forms.TextBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.Results = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.Discussion = new System.Windows.Forms.TabPage();
             this.Conclusion = new System.Windows.Forms.TabPage();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.Methods = new System.Windows.Forms.TabPage();
-            this.num1 = new System.Windows.Forms.TextBox();
-            this.num2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.lblResult = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.Results.SuspendLayout();
             this.Methods.SuspendLayout();
+            this.Results.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -96,6 +98,105 @@
             this.tabControl1.Size = new System.Drawing.Size(1054, 544);
             this.tabControl1.TabIndex = 3;
             // 
+            // Methods
+            // 
+            this.Methods.Controls.Add(this.button5);
+            this.Methods.Controls.Add(this.button4);
+            this.Methods.Controls.Add(this.button3);
+            this.Methods.Controls.Add(this.lblResult);
+            this.Methods.Controls.Add(this.button2);
+            this.Methods.Controls.Add(this.num2);
+            this.Methods.Controls.Add(this.num1);
+            this.Methods.Controls.Add(this.checkedListBox1);
+            this.Methods.Location = new System.Drawing.Point(4, 29);
+            this.Methods.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Methods.Name = "Methods";
+            this.Methods.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Methods.Size = new System.Drawing.Size(1046, 511);
+            this.Methods.TabIndex = 0;
+            this.Methods.Text = "Calculator";
+            this.Methods.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(41, 160);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(86, 38);
+            this.button5.TabIndex = 7;
+            this.button5.Text = "Multiply";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(41, 116);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(86, 38);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "Subtract";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(41, 204);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(86, 38);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Divide";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(342, 32);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(51, 20);
+            this.lblResult.TabIndex = 4;
+            this.lblResult.Text = "label1";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(41, 72);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(86, 38);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Add";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // num2
+            // 
+            this.num2.Location = new System.Drawing.Point(176, 29);
+            this.num2.Name = "num2";
+            this.num2.Size = new System.Drawing.Size(100, 26);
+            this.num2.TabIndex = 2;
+            this.num2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
+            // 
+            // num1
+            // 
+            this.num1.Location = new System.Drawing.Point(41, 29);
+            this.num1.Name = "num1";
+            this.num1.Size = new System.Drawing.Size(100, 26);
+            this.num1.TabIndex = 1;
+            this.num1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.CheckOnClick = true;
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "1.Cut the agar jelly into 10mm,20mm,30,, and 40mm cubes.",
+            "2. Add the jelly into a beaker and fill it up with hydrochloric acid",
+            "3. Mix and observe for 8 minutes",
+            "4"});
+            this.checkedListBox1.Location = new System.Drawing.Point(453, 268);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(498, 193);
+            this.checkedListBox1.TabIndex = 0;
+            // 
             // Results
             // 
             this.Results.Controls.Add(this.button1);
@@ -138,83 +239,6 @@
             this.Conclusion.Text = "Conclusion";
             this.Conclusion.UseVisualStyleBackColor = true;
             // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.CheckOnClick = true;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "1.Cut the agar jelly into 10mm,20mm,30,, and 40mm cubes.",
-            "2. Add the jelly into a beaker and fill it up with hydrochloric acid",
-            "3. Mix and observe for 8 minutes",
-            "4"});
-            this.checkedListBox1.Location = new System.Drawing.Point(453, 268);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(498, 193);
-            this.checkedListBox1.TabIndex = 0;
-            // 
-            // Methods
-            // 
-            this.Methods.Controls.Add(this.button3);
-            this.Methods.Controls.Add(this.lblResult);
-            this.Methods.Controls.Add(this.button2);
-            this.Methods.Controls.Add(this.num2);
-            this.Methods.Controls.Add(this.num1);
-            this.Methods.Controls.Add(this.checkedListBox1);
-            this.Methods.Location = new System.Drawing.Point(4, 29);
-            this.Methods.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Methods.Name = "Methods";
-            this.Methods.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Methods.Size = new System.Drawing.Size(1046, 511);
-            this.Methods.TabIndex = 0;
-            this.Methods.Text = "Calculator";
-            this.Methods.UseVisualStyleBackColor = true;
-            // 
-            // num1
-            // 
-            this.num1.Location = new System.Drawing.Point(41, 29);
-            this.num1.Name = "num1";
-            this.num1.Size = new System.Drawing.Size(100, 26);
-            this.num1.TabIndex = 1;
-            this.num1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
-            // 
-            // num2
-            // 
-            this.num2.Location = new System.Drawing.Point(176, 29);
-            this.num2.Name = "num2";
-            this.num2.Size = new System.Drawing.Size(100, 26);
-            this.num2.TabIndex = 2;
-            this.num2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.num1_KeyPress);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(41, 72);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 38);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // lblResult
-            // 
-            this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(172, 72);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(51, 20);
-            this.lblResult.TabIndex = 4;
-            this.lblResult.Text = "label1";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(41, 116);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 38);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Divide";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -226,9 +250,9 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.Results.ResumeLayout(false);
             this.Methods.ResumeLayout(false);
             this.Methods.PerformLayout();
+            this.Results.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -250,6 +274,8 @@
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
     }
 }
 

@@ -52,8 +52,8 @@ namespace testing
 
             float n1 = float.Parse(num1.Text);
             float n2 = float.Parse(num2.Text);
-            float sum = n1 + n2;
-            lblResult.Text = sum.ToString();
+            float r = n1 + n2;
+            lblResult.Text = r.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -63,6 +63,24 @@ namespace testing
             float r = n1 / n2;
             lblResult.Text = r.ToString();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            float n1 = float.Parse(num1.Text);
+            float n2 = float.Parse(num2.Text);
+            float r = n1 - n2;
+            lblResult.Text = r.ToString();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            float n1 = float.Parse(num1.Text);
+            float n2 = float.Parse(num2.Text);
+            float r = n1 * n2;
+            lblResult.Text = r.ToString();
+        }
+
+        
     }
 }
 
