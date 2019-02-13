@@ -42,6 +42,7 @@
             this.num2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.lblResult = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Results.SuspendLayout();
@@ -154,6 +155,7 @@
             // 
             // Methods
             // 
+            this.Methods.Controls.Add(this.button3);
             this.Methods.Controls.Add(this.lblResult);
             this.Methods.Controls.Add(this.button2);
             this.Methods.Controls.Add(this.num2);
@@ -203,6 +205,16 @@
             this.lblResult.TabIndex = 4;
             this.lblResult.Text = "label1";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(41, 116);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(80, 38);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Divide";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -237,6 +249,7 @@
         private System.Windows.Forms.TextBox num1;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Button button3;
     }
 }
 
